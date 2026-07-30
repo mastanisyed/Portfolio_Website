@@ -2,6 +2,7 @@ services:
   - type: web
     name: portfolio-backend
     runtime: java
+    plan: free
+
     buildCommand: ./mvnw clean package -DskipTests
     startCommand: java -jar target/*.jar
-    plan: free
